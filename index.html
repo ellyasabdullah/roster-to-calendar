@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MH Roster to Google Calendar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .drop-zone {
@@ -39,7 +40,7 @@
             <i class="fas fa-calendar-check text-5xl text-blue-500 mb-4"></i>
             <h2 class="text-xl font-semibold mb-2">Connect your Calendar</h2>
             <p class="text-slate-500 mb-6">We need permission to add events to your Google Calendar.</p>
-            <button id="login-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors inline-flex items-center gap-2">
+            <button id="google.accounts.oauth2.initTokenClient" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors inline-flex items-center gap-2">
                 <i class="fab fa-google"></i>
                 Sign in with Google
             </button>
@@ -102,7 +103,7 @@
     </div>
 
     <script type="module">
-        const apiKey = ""; // Set by environment
+        const apiKey = "AIzaSyDi6E0J8UFOHXYIthGYdeLA99dinkJ-qPw"; // Set by environment
         const model = "gemini-2.5-flash-preview-09-2025";
         
         // UI Elements
